@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./survey.css">
+</head>
+<body>
+   
+    <div id="main">
+      <div>
+        <form action="" id="survey-form">
+          <h1 id="title">SURVEY FORM</h1>
+
+          <p id="description">Please fill the given form below</p>
+          <div>
+            <label for="name" id="name-label">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <br />
+          <div>
+            <label for="email" id="email-label">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <br />
+          <div>
+            <label for="age" id="number-label">Age:</label>
+            <input
+              id="number"
+              type="number"
+              name="age"
+              id="age"
+              min="18"
+              max="50"
+              required
+              placeholder="18"
+            />
+          </div>
+
+          <br />
+          <div>
+              <label for="gender">Gender:</label>
+              <select name="gender" id="gender">
+                  <option value="Male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="Rather not say">Rather not say</option>
+              </select>
+              
+          </div>
+          <br>
+          <div class="radio">
+            <label for="dropdown"
+              >What field of technology are you interested in:</label
+            >
+            <select name="technology" id="dropdown">
+              <option value="Web Development">Web Development</option>
+              <option value="Cybersecurity">Cybersecurity</option>
+              <option value="Networking">Networking</option>
+              <option value="Blockchain">Blockchain</option>
+              <option value="Data Science">Data Science</option>
+            </select>
+          </div>
+
+          <br />
+          <div id="radio">
+            <label for="radio"
+              >HOW LONG YOU WOULD LIKE TO STUDY WITH US ? :
+            </label>
+<br>
+            <input type="radio" id="1 year" name="duration" value="1 year" />
+            <label for="1 year">1 year</label><br>
+            <input type="radio" id="2 years" name="duration" value="2 years" />
+            <label for="2 years">2 years</label><br>
+            <input type="radio" id="3 years" name="duration" value="3 years" />
+            <label for="3 years">3 years</label>
+          </div>
+          <br>
+          <div>
+            <label for="checkbox">YOUR LEARNING APPROACH:</label>
+            <div id="checkbox">
+              <label for="a"
+                ><input
+                  type="checkbox"
+                  name="learning"
+                  id="a"
+                  value="self-learning"
+                />SELF-LEARNING</label
+              ><br>
+              <label for="b"
+                ><input
+                  type="checkbox"
+                  name="learning"
+                  id="b"
+                  value="learning with teacher"
+                />LEARNING WITH TEACHER</label
+              ><br>
+              <label for="c"
+                ><input
+                  type="checkbox"
+                  name="learning"
+                  id="c"
+                  value="group learning"
+                />GROUP LEARNING</label
+              ><br>
+              <label for="d"
+                ><input
+                  type="checkbox"
+                  name="learning"
+                  id="d"
+                  value="onlign learning"
+                />ONLIGN LEARNING</label
+              ><br>
+              <label for="e"
+                ><input
+                  type="checkbox"
+                  name="learning"
+                  id="e"
+                  value="private learning"
+                />PRIVATE LEARNING</label
+              >
+            </div>
+             <br>
+          <div>
+            <label for="textarea">TELL US SOMETHING ELSE:</label>
+            <br>
+            <textarea placeholder="enter about your interests and hobbies" name="textarea" id="textarea" cols="20"
+                rows="5"></textarea>
+          </div>
+          
+          <div><button id="submit">Submit</button></div>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
